@@ -1,0 +1,7 @@
+flask>=3.0
+scikit-learn>=1.4
+vaderSentiment>=3.3
+openai>=1.50      # used as the client for xAI's OpenAI-compatible Grok API
+python-dotenv>=1.0  # reads your keys from the .env file
+nltk>=3.8        # optional: enables stop-word lists and lemmatization if its data is installed
+pytest>=8.0      # optional: for the tests

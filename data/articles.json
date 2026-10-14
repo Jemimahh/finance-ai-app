@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Chipmaker NovaSilicon beats earnings estimates on AI demand",
+    "source": "Sample Wire",
+    "date": "2026-10-02",
+    "topic": "Tech Stocks",
+    "text": "NovaSilicon reported third-quarter revenue of $14.2 billion, up 38% from a year earlier, beating analyst estimates of $13.1 billion. Data-center sales driven by AI accelerators more than doubled, and management raised full-year guidance for the second time this year. Gross margin expanded to 71%, the highest in the company's history. Shares jumped 9% in after-hours trading. The company did warn that export restrictions could weigh on shipments to some regions, and that supply of advanced packaging remains tight through the first half of next year. Analysts at several brokerages lifted their price targets, citing strong order visibility."
+  },
+  {
+    "id": 2,
+    "title": "Regional lender Harbor Trust tumbles as loan losses mount",
+    "source": "Sample Wire",
+    "date": "2026-10-03",
+    "topic": "Banking",
+    "text": "Harbor Trust Bancorp shares fell 14% after the regional bank disclosed that nonperforming commercial real estate loans rose to 4.1% of its portfolio, well above the 2.6% level a year ago. The bank set aside $480 million for credit losses, nearly triple analyst expectations, and cut its dividend by a third. Deposit outflows accelerated in the quarter as customers moved cash into higher-yielding money market funds. The chief executive said the bank remains well capitalized, but analysts questioned whether further provisions will be needed if office valuations keep declining. Credit rating agencies placed the bank on negative watch."
+  },
+  {
+    "id": 3,
+    "title": "Fed holds rates steady, signals patience on cuts",
+    "source": "Sample Wire",
+    "date": "2026-10-01",
+    "topic": "Macro / Rates",
+    "text": "The Federal Reserve left its benchmark interest rate unchanged on Wednesday and said it needs more evidence that inflation is moving sustainably toward its 2% target before easing policy. Officials noted that job growth has slowed but unemployment remains low. Core inflation eased slightly last month yet remains above target. Treasury yields were little changed and equities finished mixed. Several policymakers said they see room for one rate cut before year-end if the data cooperate, while others argued that cuts could be delayed into next year. Markets now price roughly a 55% chance of a December reduction."
+  },
+  {
+    "id": 4,
+    "title": "Oil slides as OPEC+ output rises and demand worries linger",
+    "source": "Sample Wire",
+    "date": "2026-10-04",
+    "topic": "Energy",
+    "text": "Crude oil prices fell more than 3% to their lowest level in five months after OPEC+ members agreed to raise production quotas and new data showed weaker fuel demand in Asia. Brent settled near $68 a barrel. Energy shares dropped, with large producers and oilfield service companies leading declines. Analysts warned that inventories are building and that a slowing global economy could keep pressure on prices. Some traders said the selloff looks overdone given geopolitical risks in key producing regions, but the near-term outlook remains cautious."
+  },
+  {
+    "id": 5,
+    "title": "Retail giant Meridian Mart reports steady holiday outlook",
+    "source": "Sample Wire",
+    "date": "2026-10-05",
+    "topic": "Retail / Consumer",
+    "text": "Meridian Mart reported quarterly same-store sales growth of 2.1%, in line with expectations, and reiterated its holiday-season forecast. Management said shoppers are trading down to private-label goods but continue to spend on essentials. Online sales grew 11%, while store traffic was flat. Inventory levels are healthy and the company said promotions will be targeted rather than broad. Shares were little changed. Analysts described the results as solid but unspectacular, noting that margin pressure from wages and shipping costs persists."
+  },
+  {
+    "id": 6,
+    "title": "Biotech Lumen Therapeutics soars after late-stage trial success",
+    "source": "Sample Wire",
+    "date": "2026-10-06",
+    "topic": "Healthcare / Biotech",
+    "text": "Lumen Therapeutics surged 42% after announcing that its experimental treatment met the primary endpoint in a late-stage clinical trial, significantly reducing disease progression versus placebo. The company plans to file for regulatory approval by the end of the year. Side effects were generally mild, though a small share of patients discontinued treatment. Analysts said the data de-risk the program and could support peak annual sales above $3 billion if approved. The firm has about 14 months of cash on hand and may raise capital to fund a commercial launch."
+  },
+  {
+    "id": 7,
+    "title": "Crypto exchange faces probe as bitcoin retreats",
+    "source": "Sample Wire",
+    "date": "2026-10-07",
+    "topic": "Crypto",
+    "text": "Bitcoin fell 6% to its lowest level in six weeks after reports that regulators opened an investigation into a major exchange over alleged customer fund mismanagement. The exchange denied wrongdoing and said withdrawals are operating normally, but trading volumes spiked as investors moved assets off the platform. Crypto-related stocks declined, and analysts warned that tighter oversight could dampen retail participation. Some long-term holders called the drop a buying opportunity, though volatility is expected to stay elevated."
+  },
+  {
+    "id": 8,
+    "title": "Airline Skyline Air issues profit warning on fuel and labor costs",
+    "source": "Sample Wire",
+    "date": "2026-10-08",
+    "topic": "Industrials",
+    "text": "Skyline Air cut its full-year profit forecast, citing higher labor costs from a new pilot contract and elevated maintenance expenses. The carrier said bookings for the fourth quarter remain healthy but that fares have softened on competitive pressure. Shares fell 8%. Management announced plans to defer aircraft deliveries and trim capacity growth to protect cash. Analysts downgraded the stock to neutral, saying the recovery in margins will take longer than previously expected."
+  }
+]
