@@ -14,13 +14,13 @@ The NLP signals are computed first and passed to the LLM as context, so the thre
 finance-ai-app/
 ├── app.py                    Flask backend (REST API + page)
 ├── check_llm.py              checks that your .env / API key works
-├── .env.example              template for your keys (copy to .env)
+├── .env                      template for your keys
 ├── .gitignore                keeps .env out of git
 ├── nlp/
 │   ├── preprocess.py         cleaning, tokenizing, stop words, lemmatizing, sentence splitting
 │   ├── sentiment.py          VADER + finance lexicon, evaluation helper
 │   ├── classifier.py         sector classifier (TF-IDF + Complement Naive Bayes, 5-fold CV)
-│   └── llm.py                xAI Grok API calls, with an offline fallback
+│   └── llm.py                GroqCloud API calls, with an offline fallback
 ├── templates/index.html      single-page UI (HTML/CSS/JS)
 ├── data/
 │   ├── articles.json         8 sample articles with date, source, topic metadata
@@ -38,7 +38,7 @@ You need Python 3.10 or newer. Run everything from the project folder.
 
 ```bash
 python -m venv .venv
-source .venv/Scripts/activate    
+source .venv/Scripts/activate    # For Windows
 pip install -r requirements.txt
 ```
 
@@ -49,13 +49,13 @@ Sign in at https://console.groq.com, create an API key.
 **3. Create your `.env` file**
 
 ```bash
-cp .env.example .env               # Windows: copy .env.example .env
+touch .env               
 ```
 
 Open `.env` in any text editor and paste your key after the equals sign, with no quotes and no spaces:
 
 ```
-GROK_API_KEY=GROQ-your-key-here
+GROQ_API_KEY=GROQ-your-key-here
 FINANCE_LLM_MODEL="openai/gpt-oss-120b"
 PORT=5000
 ```
@@ -82,7 +82,7 @@ You should see `Success. Model replied: 'OK'`. If it fails, the message names th
 python app.py
 ```
 
-The terminal prints which mode it is in (`xAI Grok API (grok-4.7)` or `offline fallback`). Open http://localhost:5000. The footer of the page and the small tag under each LLM answer show the mode too.
+The terminal prints which mode it is in (`GroqCloud API openai/gpt-oss-120b` or `offline fallback`). Open http://localhost:5000. The footer of the page and the small tag under each LLM answer show the mode too.
 
 **6. Use it**
 
@@ -92,7 +92,7 @@ Pick a sample article (or paste your own, or upload a `.txt` file), click **Anal
 
 | What you see | Meaning |
 |---|---|
-| `llm:grok-4.7` | The answer came from Grok. |
+| `llm:openai/gpt-oss-120b` | The answer came from Grok. |
 | `offline` | No key is set. Summaries and insights pick the most relevant sentences; Q&A returns the best-matching sentences. |
 | `offline-fallback` + a warning | A key is set but the call failed (bad key, no credits, network). The app kept working and shows why. |
 
@@ -102,7 +102,7 @@ Pick a sample article (or paste your own, or upload a `.txt` file), click **Anal
 - **`ModuleNotFoundError`:** the virtual environment isn't active, or `pip install -r requirements.txt` didn't finish.
 - **Port already in use:** change `PORT` in `.env`.
 - **Authentication or 401/403 errors:** the key is wrong or revoked. Create a new one.
-- **Model not found:** set `FINANCE_LLM_MODEL` to a model listed at https://docs.x.ai/docs/models.
+- **Model not found:** set `FINANCE_LLM_MODEL` to a model listed at [https://console.groq.com/docs/models](https://console.groq.com/docs/models).
 - **Corporate or school network blocks the call:** the app falls back to offline mode and still runs.
 
 **Optional NLTK data.** If you have NLTK's `stopwords` and `wordnet` data installed (`python -m nltk.downloader stopwords wordnet`), the preprocessor uses them. If not, it uses a built-in stop-word list and skips lemmatization. The app never downloads anything on its own.
