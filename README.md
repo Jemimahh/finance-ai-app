@@ -6,7 +6,11 @@ A small proof-of-concept web app. A user picks or pastes a finance news article 
 2. **Sector classification** (Banking, Tech Stocks, Energy, Healthcare / Biotech, Retail / Consumer, Macro / Rates, Crypto, Industrials) from a TF-IDF + Naive Bayes model trained with scikit-learn.
 3. **LLM output**: a short summary, bullet-point insights, and answers to free-form questions about the article.
 
+
+[App Demo Video](/media/finance-ai-app-demo.mp4)
+
 The NLP signals are computed first and passed to the LLM as context, so the three layers work as one pipeline.
+
 
 ## Project layout
 
